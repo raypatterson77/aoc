@@ -52,7 +52,7 @@ func abs(i int) int {
 func ComputeAwnser(l, r []int) int {
 	var awnser int = 0
 	if len(l) != len(r) {
-		fmt.Println("needs to be equal")
+		panic("left and right slice needs to be of equal size")
 	}
 	for i := range l {
 		a := l[i] - r[i]
